@@ -1,14 +1,9 @@
 class Item:
-    def __init__(self):
-        pass
+    def __init__(self,name,price,quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
     def calculateTotal(self,x,y):
         return x * y
     
-
-
-item = Item()
-item.name = "laptop"
-item.price = "1,50,000"
-item.quantity = 1
-
-print(item.name)
+item = Item("phone",100000,2)
