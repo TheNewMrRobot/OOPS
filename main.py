@@ -3,6 +3,7 @@ class Item:
     dis_rate = 0.7
     all = []
     def __init__(self,name: str, price: float,quantity=0):
+        assert price >= 0, f"price should not be lesser than zero {self.price}" 
         self.name = name
         self.price = price
         self.quantity = quantity
