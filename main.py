@@ -3,8 +3,8 @@ class Item:
         self.name = name
         self.price = price
         self.quantity = quantity
-    def calculateTotal(self,x,y):
-        return x * y
+    def calculateTotal(self):
+        return self.price * self.quantity
     
-item = Item("phone","1asdd",2)
-print(item.price)
+item = Item("phone",1000,2)
+print(item.calculateTotal())
