@@ -1,9 +1,10 @@
 class Item:
-    def __init__(self,name,price,quantity=0):
+    def __init__(self,name: str, price: float,quantity=0):
         self.name = name
         self.price = price
         self.quantity = quantity
     def calculateTotal(self,x,y):
         return x * y
     
-item = Item("phone",100000)
+item = Item("phone","1asdd",2)
+print(item.price)
